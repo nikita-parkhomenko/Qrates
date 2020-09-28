@@ -3,10 +3,434 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Qrates</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">  <title>Qrates</title>
 </head>
 <body>
-  
+  <header class="header container">
+    <a href="#" class="header__logo">
+      <img 
+        src="./images/logo_header.png" 
+        alt="logo" 
+        class="header__img"
+      >
+    </a>
+
+    <ul class="header__nav nav">
+      <li class="nav__item nav__item--active">
+        <a href="#" class="nav__item">discover</a>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__item">search</a>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__item">why qrates?</a>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__item">cart</a>
+      </li>
+    </ul>
+
+    <div class="header__log-in log-in">
+      <a href="#" class="log-in__button">log in</a>
+      <a href="#" class="log-in__record">make a record</a>
+    </div>
+
+    <div class="header__mobile">
+      <a href="#" class="header__goods">
+        <img class="header__goods-icon" src="./images/mobile/goods_icon.png" alt="goods">
+      </a>
+      <a href="#" class="header__toolbar">
+        <img class="header__toolbar-icon" src="./images/mobile/toolbar.png" alt="toolbar">
+      </a>
+    </div>
+  </header>
+
+  <section class="dark-bg">
+    <div class="options container">
+        <div class="options__wrapper">
+            <img 
+              src="./images/options/discover.png" 
+              alt="discover" 
+              class="options__item"
+            >
+            <img 
+              src="./images/options/records.png" 
+              alt="records" 
+              class="options__item"
+            >
+            <img 
+              src="./images/options/stories.png" 
+              alt="stories" 
+              class="options__item"
+            >
+            <img 
+              src="./images/options/lists.png" 
+              alt="lists" 
+              class="options__item"
+            >
+        </div>
+
+        <p class="options__text">Vinyl collections curated by the Qrates community</p>
+    </div>
+  </section>
+
+  <section class="music container">
+    <div class="music__tools">
+      <p class="music__lists">16 lists</p>
+      <p class="music__sort">Sort by 
+        <span class="music__sort--alphabet">A-Z
+          <span class="arrow">&lt;</span>
+        </span>
+      </p>
+    </div>
+
+    <div class="music_albums albums">
+
+      <div class="albums__wrapper">
+        <img 
+          src="./images//collections/collection1/collection_1.png" 
+          alt="album" 
+          class="albums__image"
+        >
+        <p class="albums__name">
+          Music for Daydreaming
+          <span class="albums__category">
+            Downtempo & chill beats
+          </span>
+        </p>
+
+        <div class="albums__info">
+          <img 
+            src="./images/collections/collection1/author_1.png" 
+            alt="album logo" 
+            class="albums__logo"
+          >
+
+          <span class="albums__curator">
+            Curated by 
+            <a class="albums__curator-link" href="#">Ninajirachi</a>
+          </span>
+        </div>
+      </div>
+
+      <div class="albums__wrapper">
+        <img 
+          src="./images//collections/collection2/collection_2.png" 
+          alt="album" 
+          class="albums__image"
+        >
+        <p class="albums__name">
+          Vinyl Debuts
+          <span class="albums__category">
+            Never before on wax
+          </span>
+        </p>
+
+        <div class="albums__info">
+          <img 
+            src="./images/collections/collection2/author_2.png" 
+            alt="album logo" 
+            class="albums__logo"
+          >
+
+          <span class="albums__curator">
+            Curated by 
+            <a class="albums__curator-link" href="#">KKS</a>
+          </span>
+        </div>
+      </div>
+
+      <div class="albums__wrapper">
+        <img 
+          src="./images//collections/collection3/collection_3.png" 
+          alt="album" 
+          class="albums__image"
+        >
+        <p class="albums__name">
+          Folk You
+          <span class="albums__category">
+            Folk, roots & country
+          </span>
+        </p>
+
+        <div class="albums__info">
+          <img 
+            src="./images/collections/collection3/author_3.png" 
+            alt="album logo" 
+            class="albums__logo"
+          >
+
+          <span class="albums__curator">
+            Curated by 
+            <a class="albums__curator-link" href="#">Jetset Records</a>
+          </span>
+        </div>
+      </div>
+
+      <div class="albums__wrapper">
+        <img 
+          src="./images//collections/collection4/collection_4.png" 
+          alt="album" 
+          class="albums__image"
+        >
+        <p class="albums__name">
+          Lo-fi Treats
+          <span class="albums__category">
+            Chill beats from across the globe
+          </span>
+        </p>
+
+        <div class="albums__info">
+          <img 
+            src="./images/collections/collection4/author_4.png" 
+            alt="album logo" 
+            class="albums__logo"
+          >
+
+          <span class="albums__curator">
+            Curated by 
+            <a class="albums__curator-link" href="#">TurnTable Lab</a>
+          </span>
+        </div>
+      </div>
+
+      <div class="albums__wrapper">
+        <img 
+          src="./images//collections/collection5/collection_5.png" 
+          alt="album" 
+          class="albums__image"
+        >
+        <p class="albums__name">
+          Soundcloud Rap
+          <span class="albums__category">
+            Lorem ipsum dolor sit
+          </span>
+        </p>
+
+        <div class="albums__info">
+          <img 
+            src="./images/collections/collection5/author_5.png" 
+            alt="album logo" 
+            class="albums__logo"
+          >
+
+          <span class="albums__curator">
+            Curated by 
+            <a class="albums__curator-link" href="#">Think Indie</a>
+          </span>
+        </div>
+      </div>
+
+      <div class="albums__wrapper">
+        <img 
+          src="./images//collections/collection6/collection_6.png" 
+          alt="album" 
+          class="albums__image"
+        >
+        <p class="albums__name">
+          12 Inch Canvas
+          <span class="albums__category">
+            Art & Design picks
+          </span>
+        </p>
+
+        <div class="albums__info">
+          <img 
+            src="./images/collections/collection6/author_6.png" 
+            alt="album logo" 
+            class="albums__logo"
+          >
+
+          <span class="albums__curator">
+            Curated by 
+            <a class="albums__curator-link" href="#">Qrates</a>
+          </span>
+        </div>
+      </div>
+
+    </div>
+
+    <a href="#" class="albums__load-btn">Load More</a>
+  </section>
+
+  <footer class="footer dark-bg">
+    <div class="footer__top container">
+
+      <ul class="footer-nav">
+        <li class="footer-nav__item--title">
+          For artists
+        </li>
+        <li class="footer-nav__item">
+          <a href="#" class="footer-nav__link">
+            Why Qrates?
+          </a>
+        </li>
+
+        <li class="footer-nav__item">
+          <a href="#" class="footer-nav__link">
+            Crowndfinding
+          </a>
+        </li>
+
+        <li class="footer-nav__item">
+          <a href="#" class="footer-nav__link">
+           Press & Sell
+          </a>
+        </li>
+
+        <li class="footer-nav__item">
+          <a href="#" class="footer-nav__link">
+            Our Services
+          </a>
+        </li>
+
+        <li class="footer-nav__item">
+          <a href="#" class="footer-nav__link">
+            Artist Toolkit
+          </a>
+        </li>
+
+      </ul>
+
+      <ul class="footer-nav">
+        <li class="footer-nav__item--title">
+          For fans
+        </li>
+        <li class="footer-nav__item">
+          <a href="#" class="footer-nav__link">
+            Discover
+          </a>
+        </li>
+
+        <li class="footer-nav__item">
+          <a href="#" class="footer-nav__link">
+            Records
+          </a>
+        </li>
+
+        <li class="footer-nav__item">
+          <a href="#" class="footer-nav__link">
+           Stories
+          </a>
+        </li>
+
+        <li class="footer-nav__item">
+          <a href="#" class="footer-nav__link">
+            Lists
+          </a>
+        </li>
+
+        <li class="footer-nav__item">
+          <a href="#" class="footer-nav__link">
+            Artist & labels
+          </a>
+        </li>
+
+      </ul>
+
+      <ul class="footer-nav">
+        <li class="footer-nav__item--title">
+          Our company
+        </li>
+        <li class="footer-nav__item">
+          <a href="#" class="footer-nav__link">
+            About Qrates
+          </a>
+        </li>
+
+        <li class="footer-nav__item">
+          <a href="#" class="footer-nav__link">
+            Careers
+          </a>
+        </li>
+
+        <li class="footer-nav__item">
+          <a href="#" class="footer-nav__link">
+           Partners
+          </a>
+        </li>
+      </ul>
+
+      <ul class="footer-nav">
+        <li class="footer-nav__item--title">
+          Help
+        </li>
+        <li class="footer-nav__item">
+          <a href="#" class="footer-nav__link">
+            Support Centr
+          </a>
+        </li>
+
+        <li class="footer-nav__item">
+          <a href="#" class="footer-nav__link">
+            Contact Us
+          </a>
+        </li>
+
+        <li class="footer-nav__item">
+          <a href="#" class="footer-nav__link">
+           Returns
+          </a>
+        </li>
+
+        <li class="footer-nav__item">
+          <a href="#" class="footer-nav__link">
+           Shipping
+          </a>
+        </li>
+      </ul>
+
+      <img 
+        src="./images/sticker.png" 
+        alt="sticker"
+        class="footer__sticker"
+      >
+
+    </div>
+
+    <div class="footer__bottom container">
+      <span class="footer__mobile-copy">&#169; TDMS Inc.</span>
+
+      <img 
+        src="./images/logo_footer.png" 
+        alt="company logo"
+        class="footer__logo"
+      >
+      <div class="footer__info">
+        <div class="footer__currency">
+          $USD
+          <span class="arrow arrow--white">&lt;</span>
+        </div>
+
+        <ul class="service-info">
+          <li>
+            <a href="#" class="service-info__link">
+              Terms of Service
+            </a>
+          </li>
+          <li>
+            <a href="#" class="service-info__link">
+              Privacy Policy
+            </a>
+          </li>
+          <li>
+            <a href="#" class="service-info__link">
+              Legal Information
+            </a>
+          </li>
+          <li>
+            <a href="#" class="service-info__link service-info__link--copy">
+              &#169; TDMS Inc.
+            </a>
+          </li>
+        </ul>
+
+      </div>
+
+    </div>
+  </footer>
+
 </body>
 </html>

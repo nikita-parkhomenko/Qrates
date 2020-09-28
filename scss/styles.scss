@@ -1,0 +1,436 @@
+@import './variables';
+
+html {
+  font-family: 'Roboto', sans-serif;;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  @media (max-width: $mobileWidth) {
+    max-width: 600px;
+  }
+}
+
+.dark-bg {
+  background-color: $dark-color-section;
+}
+
+.arrow {
+  display: inline-block;
+  transform: rotate(270deg);
+
+  &--white {
+    color: $white-text-color;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+  }
+}
+
+// Header Start
+
+.header {
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+
+  &__logo {
+    display: inline-block;
+    width: 30px;
+    height: 44px;
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__nav {
+    width: 40%;
+  }
+
+  &__mobile {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: $mobileWidth) {
+      display: flex;
+    }
+  }
+
+  &__goods {
+    display: block;
+    width: 40px;
+    cursor: pointer;
+    margin-right: 30px;
+  }
+
+  &__goods-icon {
+    width: 100%;
+  }
+
+  &__toolbar {
+    display: block;
+    width: 36px;
+    cursor: pointer;
+    margin-top: 5px;
+  }
+
+  &__toolbar-icon {
+    width: 100%;
+  }
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (max-width: $mobileWidth) {
+    display: none;
+  }
+
+  &__item {
+    text-transform: uppercase;
+    color: $main-text-color;
+    font-weight: $bold-font-weight;
+    font-size: 14px;
+    box-sizing: content-box;
+    margin-right: 10px;
+    transition: 0.6s all;
+
+    &--active {
+      border-bottom: 2px solid #000;
+    }
+  }
+
+  &__item:hover {
+    color: rgb(154, 154, 154);
+    border-bottom-color: rgb(184, 184, 184);
+  }
+}
+
+.log-in {
+  display: flex;
+  align-items: center;
+
+  @media (max-width: $mobileWidth) {
+    display: none;
+  }
+
+  &__button {
+    text-transform: uppercase;
+    color: $main-text-color;
+    font-weight: $bold-font-weight;
+    margin-right: 10px;
+    transition: 0.6s all;
+    font-size: 14px;
+
+    &:hover {
+      transform: translateY(-3px)
+    }
+  }
+
+  &__record {
+    text-transform: uppercase;
+    color: $white-text-color;
+    font-weight: $bold-font-weight;
+    background-color: #000;
+    border-radius: 20px;
+    padding: 10px 30px;
+    transition: 0.6s all;
+    font-size: 14px;
+
+    &:hover {
+      color: $main-text-color;
+      background-color: rgb(209, 209, 209);
+    }
+  }
+}
+
+// Header end
+
+// Options start
+
+.options {
+  padding: 30px;
+  margin-bottom: 30px;
+  overflow: hidden;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+  }
+
+  &__item {
+    width: 130px;
+    height: 40px;
+
+    @media (max-width: $mobileWidth) {
+      width: 100px;
+      height: 30px;
+    }
+  }
+
+  &__text {
+    color: $white-text-color;
+    text-align: center;
+  }
+}
+
+// Options end
+
+// Music start
+
+.music {
+  display: flex;
+  flex-direction: column;
+
+  &__tools {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+    margin-bottom: 30px;
+  }
+
+    &__sort {
+      &--alphabet {
+        font-weight: $bold-font-weight;
+        cursor: pointer;
+      }
+    }
+}
+
+.albums {
+  display: flex;
+  justify-content: stretch;
+  flex-wrap: wrap;
+
+  &__wrapper {
+    width: 50%;
+    box-sizing: border-box;
+    border-bottom: 2px solid #000;
+    border-right: 2px solid #000;
+
+    @media (max-width: $mobileWidth) {
+      width: 100%;
+      border-left: 2px solid #000;
+    }
+  }
+
+  &__image {
+    width: 100%;
+  }
+
+  &__name {
+    font-weight: $bold-font-weight;
+    padding: 15px 20px;
+  }
+
+  &__category {
+    font-weight: $medium-font-weight;
+    display: block;
+    margin-top: 10px;
+  }
+
+  &__info {
+    padding: 15px 20px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  &__logo {
+    width: 30px;
+    margin-right: 15px;
+  }
+
+  &__curator {
+    font-weight: $medium-font-weight;
+    font-size: 14px;
+  }
+
+  &__curator-link {
+    color: $main-text-color;
+    border-bottom: 1px solid #000;;
+  }
+
+  &__load-btn {
+    display: inline-block;
+    margin: 80px auto;
+    padding: 10px 40px;
+    border-radius: 30px;
+    border: 2px solid #000;
+    color: $main-text-color;
+    font-weight: $bold-font-weight;
+    text-transform: uppercase;
+    transition: 0.6s all;
+
+    &:hover {
+      color: #fff;
+      background-color: #000;
+    }
+
+    @media (max-width: $mobileWidth) {
+      width: 80%;
+      display: block;
+      text-align: center;
+    }
+  }
+}
+
+//Music end
+
+//Footer start
+
+.footer {
+  padding: 40px 30px;
+
+  &__top {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    position: relative;
+
+    @media (max-width: $mobileWidth) {
+      justify-content: space-between;
+    }
+  }
+
+  &__sticker {
+    position: absolute;
+    top: 80px;
+    right: 100px;
+    width: 100px;
+    z-index: 1;
+
+    @media (max-width: $mobileWidth) {
+      display: none;
+    }
+  }
+
+  &__bottom {
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: $mobileWidth) {
+      margin-top: 50px;
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+  }
+
+  &__mobile-copy {
+    color: $white-text-color;
+    font-size: 12px;
+    text-align: center;
+    display: none;
+    margin-top: 50px;
+  
+    @media (max-width: $mobileWidth) {
+      display: block;
+    }
+  }
+
+  &__logo {
+    width: 30%;
+
+    @media (max-width: $mobileWidth) {
+      width: 80%;
+      margin-top: 80px;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    position: relative;
+
+    @media (max-width: $mobileWidth) {
+      width: 100%;
+      align-items: center;
+    }
+  }
+
+  &__currency {
+    color: $white-text-color;
+    display: inline-block;
+    height: fit-content;
+    border: 2px solid #fff;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-bottom: 20px;
+
+    @media (max-width: $mobileWidth) {
+      width: 100%;
+    }
+  }
+  
+}
+
+.footer-nav {
+  z-index: 2;
+  width: 25%;
+
+  @media (max-width: $mobileWidth) {
+    width: 40%;
+    margin-bottom: 40px;
+  }
+
+  &__item {
+    margin-bottom: 15px;
+
+    &--title {
+      color: $white-text-color;
+      font-weight: $bold-font-weight;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__link {
+    color: $white-text-color;
+    transition: 0.4s all;
+
+    &:hover {
+      color: rgb(174, 174, 174);
+    }
+  }
+}
+
+.service-info {
+  display: flex;
+  justify-content: flex-start;
+
+  @media (max-width: $mobileWidth) {
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  &__link {
+    color: $white-text-color;
+    margin-left: 15px;
+    font-size: 12px;
+
+    @media (max-width: $mobileWidth) {
+      margin-left: 0;
+    }
+
+    &--copy {
+      @media (max-width: $mobileWidth) {
+        display: none;
+      }
+    }
+  }
+}
+
+// Footer end
