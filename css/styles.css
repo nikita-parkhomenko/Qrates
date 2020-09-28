@@ -26,8 +26,8 @@ html {
 .arrow--white {
   color: #fff;
   position: absolute;
-  top: 12px;
-  right: 12px;
+  top: 10px;
+  right: 10px;
 }
 
 .header {
@@ -436,7 +436,6 @@ html {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  position: relative;
 }
 
 @media (max-width: 600px) {
@@ -450,6 +449,7 @@ html {
 
 .footer__currency {
   color: #fff;
+  position: relative;
   display: inline-block;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -457,7 +457,7 @@ html {
   border: 2px solid #fff;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 10px 20px;
+  padding: 10px 40px 10px 20px;
   cursor: pointer;
   margin-bottom: 20px;
 }
